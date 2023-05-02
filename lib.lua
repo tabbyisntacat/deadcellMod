@@ -440,7 +440,7 @@ function library.createkeybindlist() -- ctrl c + ctrl v
     function keybind_list_tbl:add_keybind(name, key)
         local key_settings = {};
         --
-        local key_holder = utility.create("Square", {Parent = list_content, Size = UDim2.new(1,0,0,22), ZIndex = 100, Transparency = 1, Visible = false, Filled = true, Thickness = 1, Theme = "Window Outline Background"}) do
+        local key_holder = utility.create("Square", {Parent = list_content, Size = UDim2.new(1,0,0,22), ZIndex = 100, Transparency = 0, Visible = true, Filled = true, Thickness = 1, Theme = "Window Outline Background"}) do
             local outline = utility.outline(key_holder, "Window Border");
             utility.outline(outline, Color3.new(0,0,0));
         end;
